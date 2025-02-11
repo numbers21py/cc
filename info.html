@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общая информация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="info.html">Общая информация</a>
+        <a href="history.html">История</a>
+        <a href="discography.html">Дискография</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Кто такие Crystal Castles?</h1>
+        <p class="txt">В начале 2000-х никто не мог предположить, что из обычного эксперимента родится одна из самых обсуждаемых групп в мире электронной музыки. Crystal Castles появились как результат творческого поиска Итана Ката, который в 2003 году начал экспериментировать со звуком, вдохновляясь панк-культурой и 8-битными играми.<br><br>Все изменилось, когда он случайно наткнулся на запись молодой певицы Алис Гласс. Ее резкий, бунтарский вокал оказался идеальным дополнением к его хаотичным битам, и уже через год Crystal Castles выпустили свой первый вирусный хит — Alice Practice.<br><br>С тех пор группа стала легендой. Их выступления напоминали электро-панк-ритуалы, а фанаты сходили с ума от агрессивных басов и сумасшедших визуальных эффектов. Их музыку можно было услышать на фестивалях, в культовых сериалах и даже в компьютерных играх.<br><br>Но за кулисами все было далеко не так идеально. В 2014 году Алис покинула группу, а ее место заняла Эдит Франсес, которая привнесла в звучание Crystal Castles новые оттенки.<br><br>И хотя официально коллектив не объявлял о своем распаде, с 2018 года они хранят молчание. Однако их музыка продолжает жить, вдохновляя тысячи музыкантов по всему миру.</p>
+    </div>
+    
+    <footer>
+        <p>2025 Crystal Castles Fan Site</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    const currentLocation = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+        if(link.getAttribute("href") === currentLocation) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+</script>

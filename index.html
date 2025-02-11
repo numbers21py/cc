@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Crystal Castles</title>
+</head>
+<body>
+	<nav>
+        <a href="index.html">Главная</a>
+        <a href="info.html">Общая информация</a>
+        <a href="history.html">История</a>
+        <a href="discography.html">Дискография</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Crystal Castles</h1>
+        <h2>Электронное безумие из Канады</h2>
+        <div class="hero">
+            <img src="img/1094730.jpg" alt="Crystal Castles">
+            <div class="hero-text">
+                <p class="txt">Загадочные, мрачные, хаотичные – Crystal Castles стали настоящим прорывом на сцене экспериментальной электроники. Их музыка сочетает агрессивные синтетические биты, гипнотические вокальные партии и неистовую энергию, которой заряжены их живые выступления.<br>С момента своего появления в 2006 году группа вызвала бурю эмоций среди поклонников альтернативной музыки. Их дебютный альбом поразил критиков, а каждый следующий релиз становился все более мрачным и концептуальным.<br>Их музыка — это как прорваться сквозь бурю из цифрового шума, неоновых вспышек и бесконечных танцевальных ритмов. Crystal Castles — это не просто музыка, это опыт, который захватывает с первой ноты.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>prod by Ivan Boikov</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    const currentLocation = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+        if(link.getAttribute("href") === currentLocation) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+</script>

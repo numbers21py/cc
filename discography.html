@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дискография</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="info.html">Общая информация</a>
+        <a href="history.html">История</a>
+        <a href="discography.html">Дискография</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Дискография</h1>
+        <p>Список альбомов Crystal Castles:</p>
+        <ul class="album-gallery">
+            <li>
+                <p class="txt">Alice Practice</p>
+                <img class="discography" src="img/alice-practice.jpg" alt="Crystal Castles">
+            </li>
+            <li>
+                <p class="txt">Crystal Castles (2008)</p>
+               <img class="discography" src="img/ccI.jpg" alt="Crystal Castles">
+            </li>
+            <li>
+                <p class="txt">Doe Deer</p>
+                <img class="discography" src="img/doe-deer.jpg" alt="Crystal Castles">
+            </li>
+            <li>
+                <p class="txt">Crystal Castles II (2010)</p>
+                <img class="discography" src="img/ccII.jpg" alt="Crystal Castles">
+            </li>
+            <li>
+                <p class="txt">Crystal Castles III (2012)</p>
+                <img class="discography" src="img/ccIII.jpg" alt="Crystal Castles">
+            </li>
+            <li>
+                <p class="txt">Amnesty (I) (2016)</p>
+                <img class="discography" src="img/amnestyI.jpg" alt="Crystal Castles">
+            </li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>2025 Crystal Castles Fan Site</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    const currentLocation = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+        if(link.getAttribute("href") === currentLocation) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+</script>
